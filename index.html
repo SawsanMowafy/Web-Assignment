@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classico Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                
+                <h1><span id="brand">Classico</span> Store <span><img src="c:\Users\MG\Desktop\Assignment project\imgs\coffee-cup.png" alt="logo" class="logo-image"></span></h1> 
+                
+            </div>
+            <ul class="nav_list" id="navlist">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="hamburger" onclick="play()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="products">
+            <h2>Our Mugs Collection</h2>
+            <div class="product-grid">
+           
+                <div class="product">
+                    <img src="c:\Users\MG\Desktop\Assignment project\imgs\classic.avif" alt="Classic Mug">
+                    <h3>Classic Mug</h3>
+                    <p>Price: 40L.E</p>
+                </div>
+                <div class="product">
+                    <img src="c:\Users\MG\Desktop\Assignment project\imgs\colored.jpg" alt="Color Splash Mug">
+                    <h3>Color Splash Mug</h3>
+                    <p>Price: 50L.E</p>
+                </div>
+    
+                <div class="product">
+                    <img src="c:\Users\MG\Desktop\Assignment project\imgs\gold.jpeg" alt="Modern Mug">
+                    <h3>Golden Mug</h3>
+                    <p>Price: 50L.E</p>
+                </div>
+                <div class="product">
+                    <img src="c:\Users\MG\Desktop\Assignment project\imgs\vintage.jpeg" alt="Elegant Mug">
+                    <h3>Elegant Mug</h3>
+                    <p>Price: 55L.E</p>
+                </div>
+                <div class="product">
+                    <img src="c:\Users\MG\Desktop\Assignment project\imgs\modern.jpeg" alt="Modern Mug">
+                    <h3>Modern Mug</h3>
+                    <p>Price: 45L.E</p>
+                </div>
+                
+                <div class="product">
+                    <img src="c:\Users\MG\Desktop\Assignment project\imgs\floral.jpeg" alt="Floral Mug">
+                    <h3>Floral Mug</h3>
+                    <p>Price: 50L.E</p>
+                </div>
+                <div class="product">
+                    <img src="c:\Users\MG\Desktop\Assignment project\imgs\sky.jpeg" alt="Sky Mug">
+                    <h3>Sky Mug</h3>
+                    <p>Price: 55L.E</p>
+                </div>
+                <div class="product">
+                    <img src="c:\Users\MG\Desktop\Assignment project\imgs\stone.jpg" alt="Stone Mug">
+                    <h3>Stone Mug</h3>
+                    <p>Price: 65L.E</p>
+                </div>
+                <div class="product">
+                    <img src="c:\Users\MG\Desktop\Assignment project\imgs\black.jpeg" alt="Black Mug">
+                    <h3>Black Mug</h3>
+                    <p>Price: 50L.E</p>
+                </div>
+                <div class="product">
+                    <img src="c:\Users\MG\Desktop\Assignment project\imgs\couple.jpeg" alt="Couple Mugs">
+                    <h3>Couple Mugs</h3>
+                    <p>Price: 130L.E</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="order">
+            <h2>Place Your Order</h2>
+            <form id="orderForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Your Name" required>
+
+                <label for="phone">Number:</label>
+                <input type="tel" id="phone" placeholder="Your number" required>
+
+                <label for="product">Select Mug:</label>
+                <select id="product" required>
+                    <option value="Classic Mug">Classic Mug</option>
+                    <option value="Color Splash Mug">Color Splash Mug</option>
+                    <option value="Golden Mug">Golden Mug</option>
+                    <option value="Elegant Mug">Elegant Mug</option>
+                    <option value="Modern Mug">Modern Mug</option>
+                    <option value="Black Mug">Black Mug</option>
+                    <option value="Floral Mug">Floral Mug</option>
+                    <option value="Sky Mug">Sky Mug</option>
+                    <option value="Stone Mug">Stone Mug</option>
+                    <option value="Couple Mugs">Couple Mugs</option>
+                </select>
+
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" min="1" required>
+
+                <button type="submit">Submit Order</button>
+            </form>
+            <p id="orderMessage"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Classico Store</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
